@@ -1,0 +1,16 @@
+workstation
+servera
+serverb
+serverc
+
+[westserver]
+servera
+serverb
+
+[northserver]
+serverb
+serverc
+
+[centralserver:children]
+westserver
+northserver

@@ -1,0 +1,8 @@
+---
+- name: Create group for local user or managed hosts.
+  hosts: serverb
+  tasks:
+    - name: Add kgroup for krishna user on serverb.
+      ansible.builtin.group:
+        name: kgroup
+        state: present

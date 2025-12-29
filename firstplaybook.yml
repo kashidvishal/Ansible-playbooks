@@ -1,0 +1,9 @@
+---
+- name: Create local user on managed host
+  hosts: serverb
+  tasks:
+    - name: Add krishna user on serverb
+      ansible.builtin.user:
+        name: krishna
+        comment: 'Sys Admin'
+        state: present
